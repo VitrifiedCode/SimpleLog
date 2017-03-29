@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+
+# Intellij IDEA
+.idea/
+*.iml
+*.ipr
+*.iwl
+
+# Eclipse
+.project
+.settings/
+/bin
+
+# Java
+**/*.class
+
+# OSX
+**/*.classpath
+**/*.DS_Store
+
+# Other
+/bla
+/default
+/debug
