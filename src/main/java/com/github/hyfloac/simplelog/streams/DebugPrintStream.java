@@ -371,7 +371,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 ---------------------------------------------------------
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
-defined by the Mozilla Public License, v. 2.0.
+defined by the Mozilla Public License, v. 2.0.    
  */
 package com.github.hyfloac.simplelog.streams;
 
@@ -381,10 +381,10 @@ import org.jetbrains.annotations.NotNull;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class WarnPrintStream extends PrintStream
+public class DebugPrintStream extends PrintStream
 {
-    public WarnPrintStream(OutputStream out) { super(out); }
+    public DebugPrintStream(OutputStream out) { super(out); }
 
     @Override
-    public void println(@NotNull String msg) { super.println(Ansi.ansi().fg(Ansi.Color.YELLOW).a(msg).reset()); }
+    public void println(@NotNull String msg) { super.println(Ansi.ansi().fg(Ansi.Color.CYAN).a(msg).reset()); }
 }
